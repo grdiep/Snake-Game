@@ -7,7 +7,6 @@ import javax.swing.JPanel;
 
 public class GameScreen extends JComponent {
     //Purpose: Handles rendering the game on the screen.
-
     public GameScreen() {
         setPreferredSize(new Dimension(1000, 1000));
     }
@@ -43,11 +42,5 @@ public class GameScreen extends JComponent {
 
     // repaint(): Refreshes the screen to reflect the latest game state
     // https://www.javatpoint.com/repaint-method-in-java
-
-
-    public static void main(String[] args) {
-        GameScreen screen = new GameScreen();
-        screen.createScreen();
-    }
 }
 
