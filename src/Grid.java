@@ -18,12 +18,21 @@ public class Grid {
         return width;
     }
 
-    public boolean  outOfBoundsCheck(Point point) {
+    public boolean outOfBoundsCheck(Point point) {
         return point.getX() <= width && point.getY() <= height;
+    }
+
+    public int getX(Point point) {
+        return (int) point.getX();
+    }
+
+    public int getY(Point point) {
+        return (int) point.getY();
     }
 
     //TODO: check if cell is occurpied by snake/fruit
     public void isCellOccupied(Point point) {
-
+        if (getX(point) == 0) {
+        }
     }
 }
